@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz rejesracjny</title>
+</head>
+<body>
+
+Formularz rejesracyjny:
+<form method="post" enctype="text/plain" action="index.php">
+  <table>
+    <tr>
+      <td>Podaj imię:<td><td><input type="text" name="imię" placeholder="Jan" required></td>
+    </tr>
+    <td><td> Podaj nazwisko </td><td><input type="text" name="nazwisko" placeholder="kowalski" required></td></tr>
+    <tr><td>Nr telefonu</td><td><input type="text" name="tel" pattern="^\d{3}-\d{3}-\d{3}$" placeholder="000-000-000"></td>
+    </tr>
+    <td><td>Po0daj haslo:</td><td><input type="password" name="haslo" required></td>
+  </tr>
+    <tr><td><input type="reset" value="Wyczsc dane"></td>
+    </tr>
+  </table>
+  </form>
+</body>
+</html>
